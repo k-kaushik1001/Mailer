@@ -1,0 +1,115 @@
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/1306cba811.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12" style="
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 130px;
+">
+        <!--Sidebar content-->
+        <form action="/signup" method="POST" style="
+    padding-left: 300px;
+    padding-right: 300px;
+">
+          <h1 class="h3 mb-3 fw-normal" style="
+    padding-left: 140px;
+    padding-bottom: 30px;
+">Please SignUp</h1>
+          <div class="form-floating" style="
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+">
+            <input name="username" class="form-control" id="floatingInput" placeholder="Username">
+
+          </div>
+          <div class="form-floating" style="
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+">
+            <input name="email" type="email" class="form-control" id="floatingInput" placeholder="Email">
+
+          </div>
+          <div class="form-floating" style="
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+">
+            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+
+          </div>
+
+          <div class="checkbox mb-3" style="
+    padding-left: 50px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-6" style="
+    padding-top: 10px;
+    padding-left: 50px;
+">
+                <a href="/login" class="badge badge-light">Already have an account? Click here!</a>
+              </div>
+              <div class="col-6" style="
+    padding-left: 104px;
+">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+              </div>
+            </div>
+          </div>
+          <!-- this is a horizontal line -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <hr class="hr-light">
+              </div>
+              <p>or</p>
+              <div class="col-sm">
+                <hr class="hr-light">
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <a href="/auth/google" style="margin-left: 435px;">
+          <button type="button" class="btn btn-light" style="align-centre:true;margin-left: 0px;padding-left: 12px;"><i class="fab fa-google" aria-hidden="true"></i> Sign Up With Google</button>
+        </a>
+      </div>
+      <!-- <div class="col-6 img-style">
+
+        <img src="image.jpg" alt="image" style="width:120%;height:auto;">
+      </div> -->
+    </div>
+  </div>
+
+  <link type="text/css" id="dark-mode" rel="stylesheet" href="">
+  <style type="text/css" id="dark-mode-custom-style"></style>
+
+</section>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" style="padding-left: 10px">
+    <a class="navbar-brand" href="#">Mailer</a>
+    <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="/main">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/history">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/create">Compose</a>
+        </li>
+
+      </ul>
+      <a href="/logout" style="
+      margin-left: 900px;
+  ">
+        <button type="button" class="btn btn-outline-warning">Logout
+        </button>
+        </a>
+
+    </div>
+  </nav>
+
+  <section>
+    <form action="/create" method="POST">
+      <div style="
+      padding-left: 400px;
+      padding-right: 400px;
+      padding-top: 110px;
+  ">
+        <div class="input-group mb-3" style="margin-bottom: 10px;">
+          <span class="input-group-text" id="basic-addon1">To</span>
+
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">CC</span>
+
+          <input type="text" class="form-control" placeholder="CC" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Subject</span>
+
+          <input name="subject" type="text" class="form-control" placeholder="Subject" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">Schedule</span>
+
+          <select name="schedule" class="form-select" aria-label="Default select example">
+            <option selected="">Select Schedule</option>
+            <option name="recurring" value="Recurring">Recurring</option>
+            <option name="weekly" value="Weekly">Weekly</option>
+            <option name="monthly" value="Monthly">Monthly</option>
+            <option name="yearly" value="Yearly">Yearly</option>
+
+          </select>
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text">Body</span>
+          <textarea class="form-control" aria-label="With textarea" style="margin-top: 0px; margin-bottom: 0px; height: 164px;"></textarea>
+        </div>
+
+        <div style="
+      padding-left: 415px;
+      padding-top: 5px;
+  ">
+          <button type="submit" class="btn btn-secondary">Send</button>
+        </div>
+
+      </div>
+    </form>
+  </section>
+
+
+</body>
+
+</html>
